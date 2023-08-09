@@ -21,11 +21,11 @@
     </header>
     <!--Nav-->
     <nav class="navbar" id="navbar">
-      <ul>
-        <a href="#home"><li>Home</li></a>
-        <a href="#about"><li>Sobre mim</li></a>
-        <a href="#contact"><li>Contato</li></a>
-      </ul>
+      
+        <a href="#home">Home</a>
+        <a href="#about">Sobre mim</a>
+        <a href="#contact">Contato</a>
+      
     </nav>
     <!--Homepage-->
     <section class="home" id="home">
@@ -42,7 +42,17 @@
     </section>
     <!--About me page-->
     <section class="about" id="about">
-       <h1>Sou uma about Section</h1>
+      <h1>Sou uma About Section</h1>
+      <video class="slider" autoplay muted loop>
+        <source src="/assets/video/3kill.mp4" type="video/mp4">
+      </video>
+      <ul class="navigation">
+        <li><img src="/assets/img/thumb1.png" alt=""></li>
+        <li><img src="/assets/img/thumb1.png" alt=""></li>
+        <li><img src="/assets/img/thumb1.png" alt=""></li>
+        <li><img src="/assets/img/thumb1.png" alt=""></li>
+      </ul>
+       
     </section>
     <!--Contact Page-->
     <section class="contact" id="contact">
@@ -76,6 +86,12 @@
         } else {
           navbar.classList.remove("sticky");
         }
+      }
+    </script>
+    <script type="text/javascript">
+      function vireoUrl(hmmmmmm) {
+
+        document.getElementById("slider").src = hmmmmmm;
       }
     </script>
    
