@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="styles.css" />
     <title>Rodrigo Cesar | Guitarrista</title>
   </head>
+  <!--Body-->
   <body>
     <!--Header-->
     <header class="header" id="header">
@@ -43,14 +44,14 @@
     <!--About me page-->
     <section class="about" id="about">
       <h1>Sou uma About Section</h1>
-      <video class="slider" autoplay muted loop>
+      <video id="slider" autoplay muted loop>
         <source src="/assets/video/3kill.mp4" type="video/mp4">
       </video>
       <ul class="navigation">
-        <li><img src="/assets/img/thumb1.png" alt=""></li>
-        <li><img src="/assets/img/thumb1.png" alt=""></li>
-        <li><img src="/assets/img/thumb1.png" alt=""></li>
-        <li><img src="/assets/img/thumb1.png" alt=""></li>
+        <li onclick="videoUrl('assets/video/3kill.mp4')"><img src="/assets/img/thumb1.png"></li>
+        <li onclick="videoUrl('/assets/video/4kill.mp4')"><img src="/assets/img/thumb1.png"></li>
+        <li onclick="videoUrl('assets/video/3kill.mp4')"><img src="/assets/img/thumb1.png"></li>
+        <li onclick="videoUrl('/assets/video/4kill.mp4')"><img src="/assets/img/thumb1.png"></li>
       </ul>
        
     </section>
@@ -71,8 +72,13 @@
         <p style="text-align: center"> Copyright &copy; <script>document.write(new Date().getFullYear())</script> <a href="google.com">3N</a> | All Rights Reserved</p>
     </footer>
     <!--Scripts-->
-    <script src="script.js"></script>
+
+    <script src="script.js">function videoUrl(hmmmmmm) {
+        document.getElementById("slider").src = hmmmmmm;
+      }</script>
     <script>
+      
+
       window.onscroll = function () {
         myFunction();
       };
@@ -88,15 +94,7 @@
         }
       }
     </script>
-    <script type="text/javascript">
-      function vireoUrl(hmmmmmm) {
-
-        document.getElementById("slider").src = hmmmmmm;
-      }
-    </script>
-   
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    
     <script>
     $(document).ready(function(){
       // Add smooth scrolling to all links
@@ -123,6 +121,5 @@
       });
     });
     </script>
-   
   </body>
 </html>
