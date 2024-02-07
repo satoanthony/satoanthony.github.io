@@ -12,17 +12,39 @@
   padding: 0;
   box-sizing: border-box;
   text-decoration: none;
+  list-style: none;
   /*------------------------------Fonts------------------------------*/
   font-family: "Josefin Sans", sans-serif;
   font-family: "Josefin Slab", serif;
   font-family: "Yeseva One", serif;
 }
+/*------------------------------Hs------------------------------*/
+h1 {
+  font-family: "Josefin Slab", serif;
+  font-size: 72pt;
+}
 
+h2 {
+  font-size: 48pt;
+}
+
+h3 {
+  font-size: 36pt;
+}
+
+h4 {
+  font-size: 28pt;
+}
+
+p {
+  font-family: "Yeseva One", serif;
+}
 /*------------------------------Corpo------------------------------*/
 body {
   min-height: 100vh;
   background-color: var(--main-dk-color);
 }
+
 /*------------------------------Section------------------------------*/
 section {
   margin: auto;
@@ -30,7 +52,6 @@ section {
   height: 90vh;
   padding: 0;
   text-align: center;
-  font-family: "Yeseva One", serif;
 
   background-color: var(--main-wh-color);
 }
@@ -40,6 +61,10 @@ section {
   display: flex;
   align-items: center;
   height: 3rem;
+}
+.social-banner {
+  display: inline-flex;
+  margin-left: -6rem;
 }
 
 .top-banner a {
@@ -59,31 +84,32 @@ i {
 
 .top-banner-r {
   background-color: var(--main-color);
-  margin-left: 55rem;
+  margin-left: 58rem;
 }
 
 /*------------------------------Menu de Navegação------------------------------*/
 header {
-  background: var(--main-wh-color);
+  background-color: var(--main-wh-color);
   left: 0;
   width: 100%;
   display: inline-flex;
-  justify-content: center;
   align-items: center;
   text-align: justify;
-  z-index: 3;
+  z-index: 4;
   transition: 0.2s;
 }
 
 .logo img {
   height: 6rem;
+  margin-left: 12rem;
 }
 
 .navbar a {
   font-size: 1.2rem;
   color: var(--main-dk-color);
+  background-color: var(--main-wh-color);
   font-weight: 500;
-  margin-left: 10rem;
+  padding-left: 10rem;
 }
 
 .navbar a::before {
@@ -101,6 +127,49 @@ header {
   width: 100%;
 }
 
+.search {
+  font-size: 12pt;
+}
+
+#sticky-nav {
+  font-size: 1rem;
+  z-index: 2;
+}
+
+#sticky-nav a {
+  margin-left: 13rem;
+}
+
+.sbox {
+  width: 50rem;
+  height: 2rem;
+  background-color: var(--main-wh-color);
+  border-radius: 2rem;
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+}
+
+.sbox i {
+  font-size: 1.7rem;
+  color: var(--main-dk-color);
+}
+
+.sbox button {
+  border: none;
+  outline: none;
+  margin: 1rem;
+}
+
+.sbox > input {
+  flex: 1;
+  height: 2rem;
+  width: 1rem;
+  outline: black;
+  font-size: 1.2rem;
+  padding-left: 1rem;
+}
+
 /*------------------------------Sticky effect------------------------------*/
 div.sticky {
   position: -webkit-sticky;
@@ -114,7 +183,6 @@ div.sticky {
 
 /*------------------------------Hero Banner------------------------------*/
 .hero-banner {
-  margin-top: 2rem;
   background-image: url(/assets/home/home-bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -129,6 +197,7 @@ div.sticky {
 .hero {
   color: var(--main-wh-color);
   z-index: 5;
+  padding-bottom: 6rem;
 }
 
 .hero-banner img {
@@ -145,6 +214,7 @@ div.sticky {
   color: var(--main-wh-color);
   font-family: "Josefin Slab", serif;
   font-size: 5rem;
+  font-weight: 300;
 }
 
 .hero-banner a {
@@ -156,6 +226,7 @@ div.sticky {
   color: var(--main-sec-color);
   font-size: 2rem;
   padding: 2rem;
+  font-family: "Josefin Sans", serif;
 }
 
 .hero-banner a:hover {
@@ -164,9 +235,14 @@ div.sticky {
   box-shadow: 0px 0px 5px 5px var(--main-color);
 }
 
+.hero .btn {
+  margin-top: 6rem;
+}
+
 /*------------------------------Mini-Hero Banner------------------------------*/
 .mini-hero {
   height: 45vh;
+  display: flex;
 }
 
 .mini-banner {
@@ -175,14 +251,14 @@ div.sticky {
   justify-content: center;
   background-color: var(--main-dk-color);
   padding: 0;
-  height: 45vh;
+  height: 50vh;
 }
 
 .mini-banner img {
   object-fit: cover;
   display: block;
-  width: 49.44vw;
-  height: 45vh;
+  width: 50vw;
+  height: 50vh;
   padding: 0;
   margin: 0;
 }
@@ -214,6 +290,11 @@ div.sticky {
 }
 
 /*------------------------------Loja de acessórios------------------------------*/
+.title-section {
+  padding-top: 1rem;
+  background-color: var(--main-sec-color);
+}
+
 .product-conteiner {
   height: auto;
 }
@@ -249,6 +330,7 @@ div.sticky {
 .product-conteiner h2 {
   margin-top: 2rem;
   margin-bottom: 1.2rem;
+  font-size: 2rem;
 }
 
 .product-conteiner p {
@@ -285,6 +367,10 @@ div.sticky {
   height: 50vh;
 }
 
+.text {
+  margin-left: 10rem;
+}
+
 .text h2 {
   text-align: left;
   font-size: 2rem;
@@ -314,42 +400,50 @@ div.sticky {
   box-shadow: 0rem 0rem 0rem 0.1rem var(--main-wh-color);
 }
 
+.btn {
+  margin-top: -6%;
+}
+
 /*------------------------------Text Banner------------------------------*/
-footer {
+.footer {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.footer-conteiner {
+  max-width: 80vw;
   background-color: var(--main-wh-color);
-  padding: 5rem;
+  margin: auto;
 }
 
-footer table {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-collapse: separate;
-  border-spacing: 50px 20px;
-}
-
-.row {
+.footer-row {
   display: flex;
   flex-wrap: wrap;
 }
 
-ul {
+.footer ul {
   list-style: none;
 }
 
+.footer {
+  background-color: var(--main-wh-color);
+  padding: 4rem;
+}
+
 .footer-col {
-  width: 25%;
-  padding: 0 1rem;
+  width: 16%;
+  padding: 0 3rem;
 }
 
 .footer-col h4 {
-  font-size: 1rem;
+  font-size: 1.1rem;
   color: var(--main-dk-color);
   text-transform: capitalize;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   font-weight: 500;
   position: relative;
-  background-color: var(--main-sec-color);
+  background-color: var(--main-wh-color);
 }
 
 .footer-col h4::before {
@@ -358,39 +452,90 @@ ul {
   left: 0;
   bottom: -1rem;
   background-color: var(--main-color);
-  height: 0.2rem;
+  height: 0.1rem;
   box-sizing: border-box;
-  width: 15rem;
+  width: 4rem;
 }
 
-.footer-col ul li:not(:last-child) {
-  margin-bottom: 1.2rem;
+.footer-col ul li::not(:last-child) {
+  margin-bottom: 0rem;
 }
 
 .footer-col ul li a {
   font-size: 1rem;
   text-transform: capitalize;
-  color: var(--main-wh-color);
-  text-decoration: none;
-  font-weight: 300;
   color: var(--main-dk-color);
-  display: block;
-  transition: 0.2s ease-in-out;
+  font-weight: 300;
+  display: flex;
+  justify-content: left;
+
+  transition: all 0.3s ease;
 }
 
 .footer-col ul li a:hover {
-  color: var(--main-color);
-  padding-left: 0.5rem;
+  color: var(--main-wh-color);
+  padding-left: 0.8rem;
 }
 
-.footer-col input {
-  height: 2rem;
-  width: 20rem;
-  text-align: center;
-}
-
-.social-foot i {
+.footer-social i {
   color: var(--main-color);
   font-size: 2rem;
-  display: inline;
+  display: inline-block;
+}
+
+/*---------------------------------------Drop Down Stylization--------------------------------------------*/
+
+.header ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a,
+.dropbtn {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover,
+.dropdown:hover .dropbtn {
+  background-color: var(--main-color);
+}
+
+li.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: var(--main-color);
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
 }

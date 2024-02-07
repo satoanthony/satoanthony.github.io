@@ -22,38 +22,64 @@
   <body>
     <!----------------Barra de avisos superior---------------->
     <div class="top-banner" id="top-banner">
-      <p>Siga-nos nas redes sociais</p>
-      <a href="instagram"><i class="fa-brands fa-instagram"></i></a>
-      <a href="facebook"><i class="fa-brands fa-facebook"></i></a>
-      <a href="youtube"><i class="fa-brands fa-youtube"></i></a>
-      <a href="tiktok"><i class="fa-brands fa-tiktok"></i></a>
-      <a href="toggle de linguagem"></a>
+      <div class="social-banner">
+        <p>Siga-nos nas redes sociais</p>
+        <a href="instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a href="facebook"><i class="fa-brands fa-facebook"></i></a>
+        <a href="youtube"><i class="fa-brands fa-youtube"></i></a>
+        <a href="tiktok"><i class="fa-brands fa-tiktok"></i></a>
+        <a href="toggle de linguagem"></a>
+      </div>
       <div class="top-banner-r">
         <a href="login"><i class="fa-solid fa-user"> Login</i></a>
         <a href="favoritos"><i class="fa-solid fa-heart"></i></a>
       </div>
     </div>
     <!----------------Menu Do Topo---------------->
-    <div class="sticky" id="header">
+    <div class="header" id="header">
       <header>
         <a href="#" class="logo" id="logo"
           ><img src="/assets/home/logo.png" alt=""
         /></a>
+        <div class="sbox">
+          <input
+            class="search-input"
+            type="text"
+            placeholder="Search.."
+          /><button><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
         <nav class="navbar">
-          <a href="#">Soluções</a>
-          <a href="#">Impressoras 3D</a>
-          <a href="#">Filamentos</a>
-          <a href="#">Peças de reposição</a>
-          <a href="#">Modelos 3D</a>
+          <ul>
+            <li><a href="">A Empresa</a></li>
+            <li class="dropdown">
+              <a href="javascript:void(0)" class="dropbtn">Contato</a>
+              <div class="dropdown-content">
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
+              </div>
+            </li>
+          </ul>
         </nav>
       </header>
+      <div class="sticky" id="sticky-nav">
+        <ul>
+          <li><a href="">Soluções</a></li>
+          <li><a href="">Impressoras 3D</a></li>
+          <li><a href="">Filamentos</a></li>
+          <li><a href="">Peças de reposição</a></li>
+          <li><a href="">Modelos 3D</a></li>
+        </ul>
+      </div>
     </div>
     <!----------------Hero Banner---------------->
     <section class="hero-banner" id="hero-banner">
       <div class="hero">
         <h1>Solucões 3D para</h1>
         <h3>sua empresa</h3>
-        <a href="https://vulkanprint.com/pages/contato">Fale com a Vulkan</a>
+        <div class="btn">
+          <a href="https://vulkanprint.com/pages/contato">Fale com a Vulkan</a>
+        </div>
       </div>
     </section>
     <!----------------Mini-Hero Banners---------------->
@@ -109,40 +135,6 @@
             </div>
           </td>
         </tr>
-        <tr>
-          <td>
-            <div class="acessorios">
-              <h2>Filamentos</h2>
-              <img src="/assets/home/f5.jpg" alt="" />
-              <p>Cor</p>
-              <a href="https://vulkanprint.com/pages/filamentos">Comprar</a>
-            </div>
-          </td>
-          <td>
-            <div class="acessorios">
-              <h2>Filamentos</h2>
-              <img src="/assets/home/f6.jpg" alt="" />
-              <p>Cor</p>
-              <a href="https://vulkanprint.com/pages/filamentos">Comprar</a>
-            </div>
-          </td>
-          <td>
-            <div class="acessorios">
-              <h2>Filamentos</h2>
-              <img src="/assets/home/f7.jpg" alt="" />
-              <p>Cor</p>
-              <a href="https://vulkanprint.com/pages/filamentos">Comprar</a>
-            </div>
-          </td>
-          <td>
-            <div class="acessorios">
-              <h2>Filamentos</h2>
-              <img src="/assets/home/f8.jpg" alt="" />
-              <p>Cor</p>
-              <a href="https://vulkanprint.com/pages/filamentos">Comprar</a>
-            </div>
-          </td>
-        </tr>
       </table>
     </section>
     <!----------------Banner de Texto---------------->
@@ -155,120 +147,83 @@
           Ex at, nisi commodi voluptatem explicabo iusto temporibus obcaecati
           odio ipsum.
         </p>
-        <a href="https://vulkanprint.com/pages/a-empresa"
-          >Sim, quero conhecer!</a
-        >
+        <div class="btn">
+          <a href="https://vulkanprint.com/pages/a-empresa">
+            Sim, quero conhecer!
+          </a>
+        </div>
       </div>
     </section>
     <!----------------Footer---------------->
-    <footer>
-      <div class="row">
-        <div class="footer-col">
-          <h4>Empresa</h4>
-          <ul>
-            <li>
-              <a href="https://vulkanprint.com/pages/sobre-nos">Sobre Nós</a>
-            </li>
-            <li><a href="https://vulkanprint.com/pages/faq">Suporte</a></li>
-            <li>
-              <a href="https://vulkanprint.com/pages/contact"
-                >Entre em Contato</a
-              >
-            </li>
-          </ul>
-        </div>
-        <div class="footer-col">
-          <h4>Soluções</h4>
-          <ul>
-            <li>
-              <a href="https://vulkanprint.com/pages/a-empresa"
-                >Soluções para sua empresa</a
-              >
-            </li>
-            <li>
-              <a href="https://vulkanprint.com/pages/a-empresa">Prototipagem</a>
-            </li>
-            <li>
-              <a href="https://vulkanprint.com/pages/a-empresa"
-                >Produção em escala</a
-              >
-            </li>
-            <li>
-              <a href="https://vulkanprint.com/pages/a-empresa"
-                >Brinquedos e Brindes</a
-              >
-            </li>
-            <li>
-              <a href="https://vulkanprint.com/pages/a-empresa">Cosplay</a>
-            </li>
-          </ul>
-        </div>
-        <div class="footer-col">
-          <h4>Impressoras 3D</h4>
-          <ul>
-            <li>
-              <a
-                href="https://vulkanprint.com/pages/impressora-adventurer-5m-pro"
-                >Adventure 5M Pro</a
-              >
-            </li>
-            <li>
-              <a href="https://vulkanprint.com/pages/impressora-guider-3-ultra"
-                >Guide 3 Ultra</a
-              >
-            </li>
-          </ul>
-        </div>
-        <div class="footer-col">
-          <h4>Materiais</h4>
-          <ul>
-            <li>
-              <a href="https://vulkanprint.com/pages/filamentos-1">PLA</a>
-            </li>
-            <li>
-              <a href="https://vulkanprint.com/pages/filamentos-1">ABS</a>
-            </li>
-            <li>
-              <a href="https://vulkanprint.com/pages/filamentos-1">PETG</a>
-            </li>
-            <li>
-              <a href="https://vulkanprint.com/pages/filamentos-1">PA </a>
-            </li>
-            <li>
-              <a href="https://vulkanprint.com/pages/filamentos-1">PP </a>
-            </li>
-            <li>
-              <a href="https://vulkanprint.com/pages/filamentos-1">PC </a>
-            </li>
-            <li>
-              <a href="https://vulkanprint.com/pages/filamentos-1">ASA</a>
-            </li>
-            <li>
-              <a href="https://vulkanprint.com/pages/filamentos-1">TPU</a>
-            </li>
-            <li>
-              <a href="https://vulkanprint.com/pages/filamentos-1">PVA</a>
-            </li>
-            <li>
-              <a href="https://vulkanprint.com/pages/filamentos-1">HIPS</a>
-            </li>
-          </ul>
-        </div>
-        <div class="footer-col">
-          <h4>Fique por dentro de todas as novidades</h4>
-          <label for="email">Se inscreva em nosso newsletter</label>
-          <input
-            type="email"
-            id="email"
-            name="email"
-            placeholder="your@email.here"
-          />
-        </div>
-        <div class="social-foot">
-          <a href="instagram"><i class="fa-brands fa-instagram"></i></a>
-          <a href="facebook"><i class="fa-brands fa-facebook"></i></a>
-          <a href="youtube"><i class="fa-brands fa-youtube"></i></a>
-          <a href="tiktok"><i class="fa-brands fa-tiktok"></i></a>
+    <footer class="footer" id="footer">
+      <div class="footer-conteiner" id="footer-conteiner">
+        <div class="footer-row" id="footer-row">
+          <div class="footer-col">
+            <h4>Empresa</h4>
+            <ul>
+              <li><a href="">Sobre Nós</a></li>
+              <li><a href="">Suporte</a></li>
+              <li><a href="">Entre em Contato</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Soluções</h4>
+            <ul>
+              <li><a href="">Soluções para sua empreesa</a></li>
+              <li><a href="">Prototipagem</a></li>
+              <li><a href="">Produção em escala</a></li>
+              <li><a href="">Brinquedos e Brindes</a></li>
+              <li><a href="">Cosplay</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Impressoras 3D</h4>
+            <ul>
+              <li><a href="">Adventure 5M Pro</a></li>
+              <li><a href="">Guider 3 Ultra</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Filamentos</h4>
+            <ul>
+              <li><a href="">PLA</a></li>
+              <li><a href="">ABS</a></li>
+              <li><a href="">PETG</a></li>
+              <li><a href="">PA</a></li>
+              <li><a href="">PP</a></li>
+              <li><a href="">PC</a></li>
+              <li><a href="">ASA</a></li>
+              <li><a href="">TPU</a></li>
+              <li><a href="">PVA</a></li>
+              <li><a href="">HIPS</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Modelos 3D</h4>
+            <ul>
+              <li><a href="">Grátis</a></li>
+              <li><a href="">Objetos</a></li>
+              <li><a href="">Personagens</a></li>
+              <li><a href="">Arquitetura</a></li>
+              <li><a href="">Interiores</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Fique por dentro de nossas novidades</h4>
+            <p>Se inscreva em nossa newsletter</p>
+            <input
+              type="email"
+              class="email"
+              id="email"
+              placeholder="your@email.here"
+            />
+            <div class="footer-social">
+              <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+              <a href=""><i class="fa-brands fa-instagram"></i></a>
+              <a href=""><i class="fa-brands fa-youtube"></i></a>
+              <a href=""><i class="fa-brands fa-tiktok"></i></a>
+            </div>
+          </div>
         </div>
       </div>
     </footer>
